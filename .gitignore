@@ -1,0 +1,4 @@
+*.dat
+*.npy
+*.tar
+.vscode
