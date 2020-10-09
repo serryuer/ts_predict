@@ -24,7 +24,7 @@ def get_score(path):
     X_te = X[split_at:,:]
     Y_tr = Y[:split_at,:]
     Y_te = Y[split_at:,:]
-    model = DecisionTreeRegressor(max_depth=2) 
+    model = DecisionTreeRegressor(max_depth=2)
     model.fit(X_tr, Y_tr)
     
     plt.scatter([i for i in range(X_tr.shape[0])], Y_tr, c='lightblue')
